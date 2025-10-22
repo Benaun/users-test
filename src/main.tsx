@@ -4,7 +4,7 @@ import { createRoot } from 'react-dom/client'
 import { BrowserRouter } from 'react-router'
 
 import App from './app/App.tsx'
-import { queryClient } from './common/api/query-client.ts'
+import { queryClient } from './app/api/query-client.ts'
 import './index.css'
 
 createRoot(document.getElementById('root')!).render(
