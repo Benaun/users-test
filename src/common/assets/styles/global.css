@@ -1,0 +1,32 @@
+@import url('./reset.css');
+@import url('./variables.css');
+
+@font-face {
+  font-family: 'Manrope SemiBold';
+  src: url('../fonts/Manrope-Semibold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Manrope Medium';
+  src: url('../fonts/Manrope-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  min-width: 1280px;
+  min-height: 1400px;
+  font-family: 'Manrope Medium';
+  font-weight: 500;
+  font-size: 16px;
+  background-color: var(--color-05);
+  overflow-x: hidden;
+}
+
+.container {
+  width: 1160px;
+}
