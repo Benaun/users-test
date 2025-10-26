@@ -1,0 +1,52 @@
+.menu {
+  position: absolute;
+  top: -10px;
+  left: -40px;
+  width: 200px;
+  height: 54px;
+  background-color: var(--color-06);
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  animation: slideDown 0.3s ease;
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+
+.menu:hover {
+  height: 154px;
+}
+
+.menu__wrapper {
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.menu__item {
+  display: flex;
+  align-items: center;
+  width: 184px;
+  height: 38px;
+  padding: 0px 0px 0px 12px;
+  color: var(--color-01);
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.menu__item:hover {
+  color: var(--color-accent);
+}
