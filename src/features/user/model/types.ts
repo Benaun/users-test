@@ -33,7 +33,7 @@ export interface IUserCard {
   username: string
   city: string
   companyName: string
-  avatar: string | undefined
+  avatar?: string | undefined
 }
 
 export interface IUserCardFull extends IUserCard {
