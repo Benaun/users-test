@@ -1,2 +1,6 @@
 export { NotFoundPage } from './not-found-page/NotFoundPage'
 export { Header } from './header/Header'
+export { Logo } from './logo/Logo'
+export { Icon } from './icon/Icon'
+export { Card } from './card/Card'
+export { DropdownMenu } from './dropdown-menu/DropdownMenu'
