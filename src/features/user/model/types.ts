@@ -7,14 +7,15 @@ export interface IUserResponse {
   phone: string
   website: string
   company: ICompany
+  avatar?: string
 }
 
 interface IAddress {
-  street?: string
-  suite?: string
-  city?: string
-  zipcode?: string
-  geo?: IGeo
+  street: string
+  suite: string
+  city: string
+  zipcode: string
+  geo: IGeo
 }
 
 interface IGeo {
@@ -23,9 +24,9 @@ interface IGeo {
 }
 
 interface ICompany {
-  name?: string
-  catchPhrase?: string
-  bs?: string
+  name: string
+  catchPhrase: string
+  bs: string
 }
 
 export interface IUserCard {

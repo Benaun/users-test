@@ -22,7 +22,7 @@ export const Header = () => {
           </div>
 
           <div className={styles.header__profile}>
-            <img src='Foto.png' alt='Foto' />
+            <img src='/Foto.png' alt='Foto' />
             <span>Ivan1234</span>
           </div>
         </div>

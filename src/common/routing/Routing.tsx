@@ -16,7 +16,10 @@ export const Routing = () => {
   return (
     <Routes>
       <Route path={Paths.Main} element={<MainPage />} />
-      <Route path={Paths.Profile} element={<ProfilePage />} />
+      <Route
+        path={`${Paths.Profile}/:id`}
+        element={<ProfilePage />}
+      />
       <Route path={Paths.NotFound} element={<NotFoundPage />} />
     </Routes>
   )

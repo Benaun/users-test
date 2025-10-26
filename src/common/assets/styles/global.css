@@ -30,3 +30,16 @@ body {
 .container {
   width: 1160px;
 }
+
+@media (max-width: 768px) {
+  body {
+    min-width: 375px;
+    font-size: 14px;
+  }
+
+  .container {
+    width: 344px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
