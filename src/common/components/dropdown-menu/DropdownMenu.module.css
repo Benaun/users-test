@@ -50,3 +50,16 @@
 .menu__item:hover {
   color: var(--color-accent);
 }
+
+.menu__item_hidden {
+  display: none;
+  height: 0;
+  padding: 0;
+}
+
+.menu:hover .menu__item_hidden {
+  display: flex;
+  height: 38px;
+  padding: 0px 0px 0px 12px;
+  pointer-events: auto;
+}
