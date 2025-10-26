@@ -1,0 +1,48 @@
+.header {
+  width: 100%;
+  background-color: var(--color-06);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 16px 16px 0;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1140px;
+}
+
+.header__buttons {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.header__icons {
+  display: flex;
+  gap: 4px;
+}
+
+.header__iconItem {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.header__iconItem:hover path {
+  stroke: var(--color-accent);
+}
+
+.header__profile {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--color-02);
+  cursor: pointer;
+}
+
+.header__profile img {
+  height: 20px;
+  width: 20px;
+}
