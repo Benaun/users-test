@@ -6,7 +6,7 @@ export const Modal = ({ onClose }: { onClose: () => void }) => {
   useEffect(() => {
     const timer = setTimeout(() => {
       onClose()
-    }, 25000)
+    }, 5000)
 
     return () => clearTimeout(timer)
   }, [onClose])
