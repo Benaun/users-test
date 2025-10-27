@@ -3,7 +3,7 @@ import { useEffect } from 'react'
 import { useFetchUsers } from '@/features/user/api'
 
 import styles from './ActiveUsersList.module.css'
-import { Title } from '@/common/components'
+import { Headline } from '@/common/components'
 import { CardsList } from '@/common/components'
 import { useUserStore } from '@/common/store/store'
 
@@ -28,7 +28,7 @@ export const ActiveUsersList = () => {
 
   return (
     <div className={styles.wrapper}>
-      <Title text={'Активные'} />
+      <Headline text={'Активные'} />
       <CardsList items={visibleActiveUsers} />
     </div>
   )
