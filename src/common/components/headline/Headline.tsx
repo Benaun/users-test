@@ -1,4 +1,4 @@
-import styles from './Title.module.css'
+import styles from './Headline.module.css'
 
 export const Headline = ({ text }: { text: string }) => {
   return (
