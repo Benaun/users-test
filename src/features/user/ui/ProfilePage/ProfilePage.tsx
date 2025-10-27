@@ -7,7 +7,7 @@ import { ProfileForm } from '../profile-form/ProfileForm'
 import { ProfileNav } from '../profile-nav/ProfileNav'
 
 import styles from './ProfilePage.module.css'
-import { Modal, Title } from '@/common/components'
+import { Modal } from '@/common/components'
 import { ButtonBack } from '@/common/components/button-back/ButtonBack'
 
 export const ProfilePage = () => {
@@ -31,13 +31,13 @@ export const ProfilePage = () => {
 
   const initialValues: UpdateFormData | undefined = user
     ? {
-        name: user.name,
-        username: user.username,
-        email: user.email,
-        city: user.address?.city || '',
-        phone: user.phone,
-        company: user.company?.name || ''
-      }
+      name: user.name,
+      username: user.username,
+      email: user.email,
+      city: user.address?.city || '',
+      phone: user.phone,
+      company: user.company?.name || ''
+    }
     : undefined
 
   return (
@@ -50,7 +50,7 @@ export const ProfilePage = () => {
 
         <div className={styles.main__form_wrapper}>
           <div className={styles.main__profile}>
-            <Title text='Данные профиля' />
+            {/* <Title text='Данные профиля' /> */}
             <ProfileForm
               initialValues={initialValues}
               onUpdateSuccess={handleUpdateSuccess}
