@@ -1,6 +1,6 @@
 import { Route, Routes } from 'react-router'
 
-import { ProfilePage } from '@/features/user/ui/ProfilePage'
+import { ProfilePage } from '@/features/user/ui/ProfilePage/ProfilePage'
 
 import { MainPage } from '@/app/ui/main-page/MainPage'
 

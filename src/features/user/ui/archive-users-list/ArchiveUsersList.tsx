@@ -1,3 +1,4 @@
+import styles from './ArchiveUsersList.module.css'
 import { Title } from '@/common/components'
 import { CardsList } from '@/common/components'
 import { useUserStore } from '@/common/store/store'
@@ -12,9 +13,13 @@ export const ArchiveUsersList = () => {
   )
 
   return (
-    <div>
+    <div className={styles.wrapper}>
       <Title text='Архив' />
-      <CardsList items={visibleArchivedUsers} />
+      {visibleArchivedUsers.length ? (
+        <CardsList items={visibleArchivedUsers} />
+      ) : (
+        <div> Архив пуст</div>
+      )}
     </div>
   )
 }

@@ -49,11 +49,17 @@ export const Card = ({
     <div className={styles.card} ref={cardRef}>
       <div className={styles.card__wrapper}>
         <img
-          src={isArchived ? '/CardArchive.png' : avatar || '/Card.png'}
+          src={
+            isArchived
+              ? '/CardArchive.png'
+              : avatar || '/Card.png'
+          }
           alt='Foto'
           className={styles.card__img}
         />
-        <div className={`${styles.card__content} ${isArchived ? styles.card__content_archived : ''}`}>
+        <div
+          className={`${styles.card__content} ${isArchived ? styles.card__content_archived : ''}`}
+        >
           <div className={styles.card__info}>
             <h3>{username}</h3>
             <p>{companyName}</p>

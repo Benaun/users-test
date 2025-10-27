@@ -24,7 +24,7 @@ export const updateUserSchema = z.object({
     .string()
     .min(1, 'Телефон обязателен')
     .regex(/^\d+$/, 'Телефон должен содержать только цифры'),
-  companyName: z
+  company: z
     .string()
     .min(2, 'Должно быть минимум 2 символа')
     .max(
